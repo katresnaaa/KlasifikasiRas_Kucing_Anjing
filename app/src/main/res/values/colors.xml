@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Teal (Primary) -->
+    <color name="md_theme_primary">#009688</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#B2DFDB</color>
+    <color name="md_theme_onPrimaryContainer">#004D40</color>
+
+    <!-- Deep Orange (Secondary) -->
+    <color name="md_theme_secondary">#FF5722</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#FFCCBC</color>
+    <color name="md_theme_onSecondaryContainer">#BF360C</color>
+
+    <!-- Neutral / Background -->
+    <color name="md_theme_background">#FAFAFA</color>
+    <color name="md_theme_onBackground">#191C1C</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_onSurface">#191C1C</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#80CBC4</color>
+    <color name="md_theme_dark_onPrimary">#003732</color>
+    <color name="md_theme_dark_primaryContainer">#004D40</color>
+    <color name="md_theme_dark_onPrimaryContainer">#E6F2F0</color>
+
+    <color name="md_theme_dark_secondary">#FFAB91</color>
+    <color name="md_theme_dark_onSecondary">#5F1500</color>
+    <color name="md_theme_dark_secondaryContainer">#872100</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFDBCE</color>
+
+    <color name="md_theme_dark_background">#191C1C</color>
+    <color name="md_theme_dark_onBackground">#E1E3E3</color>
+    <color name="md_theme_dark_surface">#191C1C</color>
+    <color name="md_theme_dark_onSurface">#E1E3E3</color>
+
+    <!-- Enhanced Gradient Colors -->
+    <color name="gradient_teal_start">#00BFA5</color>
+    <color name="gradient_teal_end">#00897B</color>
+    <color name="gradient_orange_start">#FF6E40</color>
+    <color name="gradient_orange_end">#FF3D00</color>
+    
+    <!-- Enhanced UI Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="overlay_light">#14000000</color>
+    <color name="shadow_color">#33000000</color>
+    
+    <!-- Button Colors -->
+    <color name="button_teal_dark">#00695C</color>
+    <color name="button_teal_darker">#004D40</color>
+    
+    <!-- Accent Colors -->
+    <color name="accent_light_teal">#B2DFDB</color>
+    <color name="accent_light_orange">#FFCCBC</color>
+</resources>

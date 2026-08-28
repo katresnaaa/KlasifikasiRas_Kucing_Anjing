@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Untuk Context.getExternalFilesDir() -->
+    <external-files-path name="my_images" path="." />
+    <!-- Untuk Context.getCacheDir() -> Ini yang dipakai di kode saat ini -->
+    <cache-path name="cache_images" path="." />
+    <!-- Jaga-jaga jika nanti pakai external cache -->
+    <external-cache-path name="external_cache_images" path="." />
+</paths>

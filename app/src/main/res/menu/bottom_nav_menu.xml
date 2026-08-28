@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_prediction"
+        android:icon="@drawable/ic_center_focus_strong"
+        android:title="Prediksi" />
+    <item
+        android:id="@+id/navigation_about_us"
+        android:icon="@drawable/ic_heart"
+        android:title="About Us" />
+</menu>

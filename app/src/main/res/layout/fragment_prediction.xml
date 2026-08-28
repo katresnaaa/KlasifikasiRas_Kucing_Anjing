@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_fragment_prediction_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_large"
+        tools:context=".PredictionFragment">
+
+        <!-- Title Header -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Prediksi Ras Hewan"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:shadowColor="@color/shadow_color"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_marginTop="@dimen/spacing_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pilih atau ambil foto untuk mengetahui ras kucing atau anjing"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/accent_light_teal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Image Preview with Enhanced Style -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_preview_height"
+            android:scaleType="centerCrop"
+            android:src="@android:color/transparent"
+            android:background="@drawable/bg_image_preview_rounded"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            app:layout_constraintTop_toBottomOf="@+id/subtitleTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Button: Select from Gallery -->
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="Pilih Gambar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_rounded"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_medium"
+            android:layout_marginEnd="@dimen/spacing_small"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/captureImageButton"
+            app:layout_constraintHorizontal_weight="1" />
+
+        <!-- Button: Capture Photo -->
+        <Button
+            android:id="@+id/captureImageButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="Ambil Foto"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_rounded"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_medium"
+            android:layout_marginStart="@dimen/spacing_small"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/selectImageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1" />
+
+        <!-- Result Card with Enhanced Style -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Silakan pilih gambar kucing atau anjing"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_result_card_rounded"
+            android:padding="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            android:layout_marginBottom="@dimen/spacing_large"
+            app:layout_constraintTop_toBottomOf="@+id/selectImageButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="🐱 Hasil: Abyssinian (Kucing)" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
